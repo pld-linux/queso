@@ -5,10 +5,6 @@ Version:	1.20
 Release:	3
 License:	GPL
 Group:		Networking
-Group(de):	Netzwerkwesen
-Group(es):	Red
-Group(pl):	Sieciowe
-Group(pt_BR):	Rede
 Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
 Patch0:		%{name}-libpcap.patch.bz2
 BuildRequires:	automake
