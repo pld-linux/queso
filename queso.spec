@@ -1,7 +1,7 @@
 Summary:	OS identification program
 Name:		queso
 Version:	1.20
-Release:	0
+Release:	1
 License:	GPL
 Group:		Networking
 Group(de):	Netzwerkwesen
@@ -25,7 +25,8 @@ A program to detect remote OS.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/{usr/sbin,etc}
-install -s queso $RPM_BUILD_ROOT%{_sbindir}
+
+install queso $RPM_BUILD_ROOT%{_sbindir}
 install queso.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
