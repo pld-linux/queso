@@ -23,7 +23,7 @@ Program do zdalnego wykrywania Systemu Operacyjnego.
 %patch -p1
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure \
 	--with-libpcap={%_includedir}/pcap
