@@ -2,13 +2,15 @@ Summary:	OS identification program
 Summary(pl):	Program do identyfikacji OS
 Name:		queso
 Version:	1.20
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking
 Group(de):	Netzwerkwesen
 Group(pl):	Sieciowe
 Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
 Patch0:		%{name}-libpcap.patch.bz2
+BuildRequires:	automake
+BuildRequires:	autoconf
 URL:		http://www.apostols.org/projectz/queso
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +25,10 @@ Program do zdalnego wykrywania Systemu Operacyjnego.
 %patch -p1
 
 %build
-%configure --with-libpcap={%_includedir}/pcap
+aclocal
+autoconf
+%configure \
+	--with-libpcap={%_includedir}/pcap
 %{__make}
 
 %install
