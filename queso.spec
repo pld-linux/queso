@@ -8,10 +8,10 @@ Group:		Networking
 Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
 # Source0-md5:	9c2f3677e112a20ac7b7e2eeeec05fc9
 Patch0:		%{name}-libpcap.patch.bz2
+URL:		http://www.apostols.org/projectz/queso/
 BuildRequires:	automake
 BuildRequires:	autoconf
-URL:		http://www.apostols.org/projectz/queso/
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A program to detect remote OS.
