@@ -10,7 +10,7 @@ Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
 Patch0:		%{name}-libpcap.patch.bz2
 BuildRequires:	automake
 BuildRequires:	autoconf
-URL:		http://www.apostols.org/projectz/queso
+URL:		http://www.apostols.org/projectz/queso/
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
