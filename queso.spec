@@ -2,7 +2,7 @@ Summary:	OS identification program
 Summary(pl):	Program do identyfikacji OS
 Name:		queso
 Version:	1.20
-Release:	4
+Release:	5
 License:	GPL
 Group:		Networking
 Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
