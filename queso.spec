@@ -24,7 +24,7 @@ Program do zdalnego wykrywania Systemu Operacyjnego.
 
 %build
 aclocal
-autoconf
+%{__autoconf}
 %configure \
 	--with-libpcap={%_includedir}/pcap
 %{__make}
