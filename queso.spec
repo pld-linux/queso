@@ -31,18 +31,16 @@ aclocal
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{usr/sbin,etc}
+install -d $RPM_BUILD_ROOT{%{_sbindir},%{_sysconfdir}}
 
 install queso $RPM_BUILD_ROOT%{_sbindir}
 install queso.conf $RPM_BUILD_ROOT%{_sysconfdir}
-
-gzip -9nf Documentation.txt CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Documentation.txt.gz CHANGES.gz
+%doc Documentation.txt CHANGES
 %attr(755,root,root) %{_sbindir}/queso
 %attr(644,root,root) %config(noreplace) %{_sysconfdir}/queso.conf
