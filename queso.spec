@@ -2,7 +2,7 @@ Summary:	OS identification program
 Summary(pl):	Program do identyfikacji OS
 Name:		queso
 Version:	1.20
-Release:	2
+Release:	3
 License:	GPL
 Group:		Networking
 Group(de):	Netzwerkwesen
@@ -37,6 +37,8 @@ install -d $RPM_BUILD_ROOT/{usr/sbin,etc}
 
 install queso $RPM_BUILD_ROOT%{_sbindir}
 install queso.conf $RPM_BUILD_ROOT%{_sysconfdir}
+
+gzip -9nf Documentation.txt CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
