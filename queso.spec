@@ -9,8 +9,8 @@ Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
 # Source0-md5:	9c2f3677e112a20ac7b7e2eeeec05fc9
 Patch0:		%{name}-libpcap.patch.bz2
 URL:		http://www.apostols.org/projectz/queso/
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Documentation.txt CHANGES
 %attr(755,root,root) %{_sbindir}/queso
-%attr(644,root,root) %config(noreplace) %{_sysconfdir}/queso.conf
+%config(noreplace) %{_sysconfdir}/queso.conf
