@@ -1,5 +1,5 @@
 Summary:	OS identification program
-Summary(pl):	Program do identyfikacji OS
+Summary(pl.UTF-8):   Program do identyfikacji OS
 Name:		queso
 Version:	1.20
 Release:	5
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A program to detect remote OS.
 
-%description -l pl
+%description -l pl.UTF-8
 Program do zdalnego wykrywania Systemu Operacyjnego.
 
 %prep
