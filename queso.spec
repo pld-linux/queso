@@ -1,5 +1,5 @@
 Summary:	OS identification program
-Summary(pl.UTF-8):   Program do identyfikacji OS
+Summary(pl.UTF-8):	Program do identyfikacji OS
 Name:		queso
 Version:	1.20
 Release:	5
