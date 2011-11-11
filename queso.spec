@@ -7,7 +7,7 @@ License:	GPL
 Group:		Networking
 Source0:	ftp://ftp.ci.uminho.pt/pub/security/apostols/%{name}-980922.tar.bz2
 # Source0-md5:	9c2f3677e112a20ac7b7e2eeeec05fc9
-Patch0:		%{name}-libpcap.patch.bz2
+Patch0:		%{name}-libpcap.patch
 URL:		http://www.apostols.org/projectz/queso/
 BuildRequires:	autoconf
 BuildRequires:	automake

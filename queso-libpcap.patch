@@ -1,0 +1,11 @@
+--- queso-980922/configure.orig	Tue Sep 22 22:42:29 1998
++++ queso-980922/configure	Sat Aug  7 09:01:52 1999
+@@ -1068,7 +1068,7 @@
+ 
+ # Check whether --with-pcapdir or --without-pcapdir was given.
+ if test "${with_pcapdir+set}" = set; then
+-  withval="$with_pcapdir"
++  pcapdir="$with_pcapdir"
+   PCAP=1
+ else
+   pcapdir=../libpcap-0.4
